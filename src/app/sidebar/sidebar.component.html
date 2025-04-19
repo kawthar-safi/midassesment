@@ -1,0 +1,42 @@
+<div style="background-color: rgb(255, 131, 251); padding: 20px; width: 320px">
+  <img [src]="imgurl" width="300" height="300" />
+
+  <button
+    (click)="showCurrent('profile')"
+    style="display: block; margin: 10px 0; width: 100%"
+  >
+    My Profile
+  </button>
+  <button
+    (click)="showCurrent('contact')"
+    style="display: block; margin: 10px 0; width: 100%"
+  >
+    Contact Us
+  </button>
+  <button
+    (click)="showCurrent('about')"
+    style="display: block; margin: 10px 0; width: 100%"
+  >
+    About Us
+  </button>
+  <button
+    (click)="showCurrent('add-user')"
+    style="display: block; margin: 10px 0; width: 100%"
+  >
+    Add User
+  </button>
+  <button
+    (click)="showCurrent(' universities')"
+    style="display: block; margin: 10px 0; width: 100%"
+  >
+    Get Universities
+  </button>
+</div>
+@if (currentPage === 'profile') {
+<app-profile></app-profile>
+} @else if (currentPage === 'contact') {
+<app-contact-us></app-contact-us>
+} @else if (currentPage === 'about') {
+<app-about-us-page></app-about-us-page>
+} @else if (currentPage === 'add-user') { }@else{
+<app-home-page></app-home-page> }

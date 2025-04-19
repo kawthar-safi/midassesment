@@ -1,0 +1,10 @@
+<div *ngIf="!isLoggingIn">
+  <p>Welcome, guest.</p>
+  <button (click)="login()">Login</button>
+</div>
+
+<div *ngIf="isLoggingIn">
+  <p>Welcome, {{ username }}</p>
+  <button (click)="logout()">Logout</button>
+</div>
+<hr />

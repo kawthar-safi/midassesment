@@ -1,0 +1,14 @@
+<p>Contact Us</p>
+<form (ngSubmit)="sendMessage()">
+  <label>Name :<input type="text" [(ngModel)]="name" name="name" /> </label
+  ><br />
+  <label>Email :<input type="email" [(ngModel)]="email" name="email" /> </label
+  ><br />
+  <label
+    >Subject :<input type="text" [(ngModel)]="subject" name="subject" /> </label
+  ><br />
+  <label
+    >Message :<input type="text" [(ngModel)]="message" name="message" /> </label
+  ><br />
+  <button type="submit">Send Message</button>
+</form>
